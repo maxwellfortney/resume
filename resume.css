@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap");
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #434343;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0.45in;
+    width: 8.5in;
+    height: 11in;
+    background-color: white;
+    box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+    font-family: "Source Sans Pro", "Cambria", "Charter", "Georgia", sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.indented-paragraph {
+    /* text-align: start;
+    text-indent: 50px; */
+    padding-left: 10px;
+    text-indent: -10px;
+}
+
+.light-blue {
+    color: #0096ff;
+}
+
+.light-blue-border {
+    border-color: #0096ff;
+}
+
+@media print {
+    html {
+        height: 11in;
+        width: 8.5in;
+        overflow: hidden;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    button {
+        display: none;
+    }
+
+    .download-link {
+        display: none;
+    }
+}
